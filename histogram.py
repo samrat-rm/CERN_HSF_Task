@@ -6,6 +6,7 @@ reader = hm.ReaderAscii(filename)
 event = hm.GenEvent()
 
 pt_values = []
+event_count = 0
 
 while not reader.failed():
     reader.read_event(event)
@@ -14,8 +15,6 @@ while not reader.failed():
 
     event_count += 1
     num_particles = len(list(event.particles()))
-    
-    print(f"Event {event_count}: {num_particles} particles")
 
     # Compute transverse momentum
     for particle in event.particles():
@@ -24,7 +23,8 @@ while not reader.failed():
             px, py = particle.momentum().px(), particle.momentum().py()            
             pt = (px**2 + py**2) ** 0.5 
             pt_values.append(pt)
-
+    
+print(f"Event {event_count}: {num_particles} particles")
 
 reader.close()
 
