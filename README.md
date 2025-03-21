@@ -60,14 +60,12 @@ Task 2b Plot Screenshot :
 
 ### From this experience of using HepMC files, how do you think MC data should best be provided for open data analysis, and why?
 
-HepMc is the most widely used fromat but I think it should be available in all the format for beginners to see, interact and to help understand the difference between them. Also a short "getting started with HepMC data using Python" guide would have helped me a lot.
+It should be provided in a well-documented format with accessible tools like interactive Jupyter notebooks for analysis can significantly lower the entry barrier for students and non-experts. 
 
 ### Brief Reflection on the Task
 
-Working with HepMC data for the first time was an insightful experience. Setting up the environment and parsing the event file was a bit tricky at first because the python HepMC3 package's file reader function was a bit difficult to find, but once the data was loaded, the task became straightforward. And the transition from a simple python script to an interactive Jupyter notebook highlighted the advantages of visualization and interactive tools, making it easier to explore and interpret the data.
+Working with HepMC data for the first time was an insightful experience. Setting up the environment and parsing the event file was a bit tricky , but once the data was loaded, the task became straightforward. And the transition from a simple python script to an interactive Jupyter notebook highlighted the advantages of visualization and interactive tools, making it easier to explore and interpret the data.
 
-I also struggled a lot while trying to install dependencies like pyhepmc, matplotlib, ipywidgets etc. It would be really helpful if there was a cobra environment YAML for easy installation and maybe homebrew support. Pre-configured environments (Docker, Conda) can be very useful for beginners to avoid dependency issues. 
-
-Overall, this has been one of the most engaging and valuable learning experiences I have had.
+This was my first time using Jupyter and other data visualization tools, and I found the experience both insightful. Overall, it has been one of the most engaging and valuable learning experiences I have had.
 
  
